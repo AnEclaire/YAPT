@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:yapt/features/load_in/screens/widgets/onboarding_page.dart';
 import 'package:yapt/features/load_in/screens/widgets/starthuntin.dart';
 import 'package:yapt/utils/constants/imageStrings.dart';
 import 'package:yapt/utils/constants/text_strings.dart';
+import '../controllers.onboarding/onboarding_controller.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
     return Scaffold(
       body: Stack(
         children: [

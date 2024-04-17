@@ -4,6 +4,8 @@ import 'package:yapt/utils/constants/sizes.dart';
 import 'package:yapt/utils/device/device_utility.dart';
 import 'package:yapt/utils/helpers/helper_functions.dart';
 
+import '../../controllers.onboarding/onboarding_controller.dart';
+
 class StartHuntin extends StatelessWidget {
   const StartHuntin({
     super.key,
@@ -17,7 +19,7 @@ class StartHuntin extends StatelessWidget {
         right: HSizes.buttonWidth,
         left: HSizes.buttonWidth,
         child: TextButton(
-          onPressed: (){},
+          onPressed: () => OnBoardingController.instance.openHome(),
           style: ElevatedButton.styleFrom(backgroundColor: dark ? HColors.primary : Colors.black),
           child: const Text("Start Huntin'"),
         )

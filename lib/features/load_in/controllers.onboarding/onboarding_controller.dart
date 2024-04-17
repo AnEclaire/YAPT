@@ -1,18 +1,13 @@
 import 'package:get/get.dart';
+import '../../home/screens/home.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
   // Vars
 
-  // Update Current Index on scroll
-  void updatePageIndicator(index) {}
-
-  void dotNavigationClick(index) {}
-
-  void nextPage() {
-
+  // Open Home Page on Click
+  void openHome() {
+    Get.to(HomeScreen());
   }
-
-  void skipPage() {}
 }
