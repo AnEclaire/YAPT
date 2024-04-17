@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:yapt/features/load_in/screens/widgets/onboarding_page.dart';
+import 'package:yapt/features/load_in/screens/widgets/starthuntin.dart';
 import 'package:yapt/utils/constants/imageStrings.dart';
-import 'package:yapt/utils/constants/textStrings.dart';
-import 'package:yapt/utils/constants/sizes.dart';
-import 'package:yapt/utils/helpers/helper_functions.dart';
-
+import 'package:yapt/utils/constants/text_strings.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -14,20 +13,16 @@ class OnBoardingScreen extends StatelessWidget {
       body: Stack(
         children: [
           PageView(
-            children: [
-              Column(
-                children: [
-                  Image(
-                      width: HHelperFunctions.screenWidth() * 0.8,
-                      height: HHelperFunctions.screenHeight() * 0.6,
-                      image: const AssetImage(HImages.onBoardingImage1)
-                  ),
-                 // Text(HTexts.)
-                  const SizedBox(height: HSizes.spaceBtwItems),
-                ],
+            children: const [
+              OnBoardingPage(image: HImages.onBoardingImage1,
+                  title: HTexts.onBoardingTitle1,
+                  subTitle: HTexts.onBoardingSubTitle1,
+                  subTitle2: HTexts.onBoardingSubTitle2
               )
             ],
-          )
+          ),
+
+          const StartHuntin(),
         ],
       )
     );

@@ -20,6 +20,8 @@ class HHelperFunctions {
       return Colors.black;
     } else if(value == 'White') {
       return Colors.white;
+    } else {
+      return null;
     }
   }
 

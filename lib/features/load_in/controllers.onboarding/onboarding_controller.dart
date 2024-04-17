@@ -10,7 +10,9 @@ class OnBoardingController extends GetxController {
 
   void dotNavigationClick(index) {}
 
-  void nextPage() {}
+  void nextPage() {
+
+  }
 
   void skipPage() {}
 }
