@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../../home/screens/home.dart';
+import '../../../navigation_menu.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
@@ -8,6 +8,6 @@ class OnBoardingController extends GetxController {
 
   // Open Home Page on Click
   void openHome() {
-    Get.to(HomeScreen());
+    Get.to(() => const NavigationMenu());
   }
 }

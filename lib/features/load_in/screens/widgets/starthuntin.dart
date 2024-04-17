@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:yapt/utils/constants/colors.dart';
 import 'package:yapt/utils/constants/sizes.dart';
+import 'package:yapt/utils/constants/colors.dart';
 import 'package:yapt/utils/device/device_utility.dart';
 import 'package:yapt/utils/helpers/helper_functions.dart';
-
 import '../../controllers.onboarding/onboarding_controller.dart';
 
 class StartHuntin extends StatelessWidget {
