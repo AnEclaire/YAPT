@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:yapt/utils/constants/colors.dart';
+import 'package:yapt/common/widgets/custom_shapes/containers/primary_header_container.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,6 +8,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold ();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            HPrimaryHeaderContainer(
+              child: Container()
+            ),
+          ]
+        ),
+      )
+    );
   }
 }
