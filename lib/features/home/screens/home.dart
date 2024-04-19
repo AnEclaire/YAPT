@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(height: HSizes.xs),
 
                       // Evidence
-                      HHomeEvidence()
+                      HHomeEvidence(),
                     ],
                   ),
                 )
