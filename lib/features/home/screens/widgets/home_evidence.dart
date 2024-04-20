@@ -11,18 +11,21 @@ class HHomeEvidence extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 180,
-      child: GridView.builder( // List view for scrollable, gridview for grid.
-        shrinkWrap: false,
-        itemCount: 7,
-        scrollDirection: Axis.horizontal,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          //childAspectRatio: 90 / 256,
-          crossAxisCount: 2,
-        ),
-        itemBuilder: (_, index) {
-          return HVerticalImageText(image: HImages.dotsImage, title: 'Dots', onTap: (){},);
-        },
-      ),
+      child: Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        alignment: WrapAlignment.center,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: <Widget>[
+          HVerticalImageText(image: HImages.emfImage, title: 'E.M.F. 5', onTap: (){},),
+          HVerticalImageText(image: HImages.dotsImage, title: 'Dots', onTap: (){},),
+          HVerticalImageText(image: HImages.uvImage, title: 'UV', onTap: (){},),
+          HVerticalImageText(image: HImages.ghostOrbsImage, title: 'Orbs', onTap: (){},),
+          HVerticalImageText(image: HImages.ghostWritingImage, title: 'Writing', onTap: (){},),
+          HVerticalImageText(image: HImages.spiritBoxImage, title: 'Spirit Box', onTap: (){},),
+          HVerticalImageText(image: HImages.freezingImage2, title: 'Freezing', onTap: (){},),
+        ],
+      )
     );
   }
 }

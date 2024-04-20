@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       // Heading
                       HSectionHeading(title: HTexts.homeAppBarSubTitle, showActionButton: false),
-                      SizedBox(height: HSizes.xs),
+                      SizedBox(height: HSizes.sm),
 
                       // Evidence
                       HHomeEvidence(),
