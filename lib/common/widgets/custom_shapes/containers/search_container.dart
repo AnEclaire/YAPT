@@ -5,6 +5,7 @@ import 'package:yapt/utils/constants/colors.dart';
 import 'package:yapt/utils/device/device_utility.dart';
 import 'package:yapt/utils/helpers/helper_functions.dart';
 
+/// Used to create the search box just below the AppBar
 class HSearchContainer extends StatelessWidget {
   const HSearchContainer({
     super.key,

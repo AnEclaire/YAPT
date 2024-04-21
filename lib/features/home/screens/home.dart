@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:yapt/common/widgets/ghosts/ghost_cards/ghost_card_vertical.dart';
+import 'package:yapt/common/widgets/layouts/grid_layout.dart';
+import 'package:yapt/utils/constants/enums.dart';
 import 'package:yapt/utils/constants/sizes.dart';
 import 'package:yapt/utils/constants/text_strings.dart';
 import 'package:yapt/common/widgets/texts/section_heading.dart';
 import 'package:yapt/features/home/screens/widgets/home_appbar.dart';
 import 'package:yapt/features/home/screens/widgets/home_evidence.dart';
+import 'package:yapt/common/widgets/ghosts/ghost_cards/ghost_card_vertical.dart';
 import 'package:yapt/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:yapt/common/widgets/custom_shapes/containers/primary_header_container.dart';
 
@@ -13,10 +15,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(children: [
-          HPrimaryHeaderContainer(
+          const HPrimaryHeaderContainer(
             child: Column(
               children: [
                 // Appbar
@@ -31,7 +33,9 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       // Heading
-                      HSectionHeading(title: HTexts.homeAppBarSubTitle, showActionButton: false),
+                      HSectionHeading(
+                          title: HTexts.homeAppBarSubTitle,
+                          showActionButton: false),
                       SizedBox(height: HSizes.sm),
 
                       // Evidence
@@ -42,15 +46,14 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          
-          // Body
+
+        // Body
           Padding(
-            padding: EdgeInsets.all(HSizes.defaultSpace),
+            padding: const EdgeInsets.symmetric(vertical: 0, horizontal: HSizes.spaceBtwItems),
             child: Column(
               children: [
-
                 // Ghosts
-                HGhostCardVertical(),
+                HGridLayout(itemCount: 24, itemBuilder: (_, index) => const HGhostCardVertical(ghost: Ghost.Phantom)),
               ],
             ),
           ),
