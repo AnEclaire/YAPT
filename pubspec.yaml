@@ -21,6 +21,7 @@ dependencies:
 
   # Icons
   iconsax: ^0.0.8
+  ionicons: ^0.2.2
   cupertino_icons: ^1.0.6
 
   # State Management

@@ -10,7 +10,7 @@ class HAppTheme {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Poppins',
+    fontFamily: 'lazy_dog',
     brightness: Brightness.light,
     primaryColor: HColors.primary,
     scaffoldBackgroundColor: Colors.white,
@@ -22,7 +22,7 @@ class HAppTheme {
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Poppins',
+    fontFamily: 'lazy_dog',
     brightness: Brightness.dark,
     primaryColor: HColors.primary,
     scaffoldBackgroundColor: Colors.black,

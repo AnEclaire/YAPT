@@ -9,6 +9,6 @@ class HTexts {
   static const String onBoardingSubTitle2 = "and resource tool";
 
   // Home
-  static const String homeAppBarTitle = "YAPT - Ghost Tool";
+  static const String homeAppBarTitle = "Ghost Investigation Tool";
   static const String homeAppBarSubTitle = "Toggle Evidence On/Off";
 }

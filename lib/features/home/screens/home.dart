@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yapt/common/widgets/ghosts/ghost_cards/ghost_card_vertical.dart';
 import 'package:yapt/utils/constants/sizes.dart';
 import 'package:yapt/utils/constants/text_strings.dart';
 import 'package:yapt/common/widgets/texts/section_heading.dart';
@@ -38,6 +39,18 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 )
+              ],
+            ),
+          ),
+          
+          // Body
+          Padding(
+            padding: EdgeInsets.all(HSizes.defaultSpace),
+            child: Column(
+              children: [
+
+                // Ghosts
+                HGhostCardVertical(),
               ],
             ),
           ),

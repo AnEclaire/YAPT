@@ -43,9 +43,9 @@ class HSizes {
   static const double dividerHeight = 1.0;
 
   // Cover Item dimensions
-  static const double productImageSize = 120.0;
-  static const double productImageRadius = 16.0;
-  static const double productItemHeight = 160.0;
+  static const double ghostImageSize = 120.0;
+  static const double ghostImageRadius = 16.0;
+  static const double ghostItemHeight = 160.0;
 
   // Input field
   static const double inputFieldRadius = 12.0;

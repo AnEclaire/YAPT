@@ -44,7 +44,7 @@ class HVerticalImageText extends StatelessWidget {
             // Text
             const SizedBox(height: HSizes.spaceBtwItems / 2),
             Text(
-              title, style: Theme.of(context).textTheme.labelMedium!.apply(color: textColor),
+              title, style: Theme.of(context).textTheme.labelLarge,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),

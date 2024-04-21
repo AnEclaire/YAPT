@@ -1,6 +1,5 @@
-
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
 import 'package:yapt/utils/theme/theme.dart';
 import 'package:yapt/features/load_in/screens/onboarding.dart';
 
@@ -11,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       themeMode: ThemeMode.system,
-      theme:HAppTheme.lightTheme,
+      theme: HAppTheme.lightTheme,
       darkTheme: HAppTheme.darkTheme,
       home: const OnBoardingScreen(),
     );

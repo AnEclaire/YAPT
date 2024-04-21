@@ -9,7 +9,7 @@ class HSearchContainer extends StatelessWidget {
   const HSearchContainer({
     super.key,
     required this.text,
-    this.icon = Iconsax.search_normal,
+    this.icon = Iconsax.search_normal_1,
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
@@ -40,7 +40,7 @@ class HSearchContainer extends StatelessWidget {
             children: [
               Icon(icon, color: HColors.darkerGrey),
               const SizedBox(width: HSizes.spaceBtwItems),
-              Text(text, style: Theme.of(context).textTheme.bodySmall)
+              Text(text, style: Theme.of(context).textTheme.bodyLarge)
             ],
           ),
         ),
