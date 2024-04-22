@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:yapt/common/widgets/layouts/grid_layout.dart';
 import 'package:yapt/utils/constants/enums.dart';
 import 'package:yapt/utils/constants/sizes.dart';
 import 'package:yapt/utils/constants/text_strings.dart';
+import 'package:yapt/common/widgets/layouts/grid_layout.dart';
 import 'package:yapt/common/widgets/texts/section_heading.dart';
 import 'package:yapt/features/home/screens/widgets/home_appbar.dart';
 import 'package:yapt/features/home/screens/widgets/home_evidence.dart';
@@ -54,6 +54,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 // Ghosts
                 HGridLayout(itemCount: 24, itemBuilder: (_, index) => const HGhostCardVertical(ghost: Ghost.Phantom)),
+                // May need a widget that can return an HGridLayout that changes itemCount and itemBuilder per evidence.
               ],
             ),
           ),

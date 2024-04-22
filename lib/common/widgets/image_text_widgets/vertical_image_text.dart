@@ -34,11 +34,11 @@ class HVerticalImageText extends StatelessWidget {
               height: 56,
               padding: const EdgeInsets.all(HSizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ?? (dark ? HColors.black : HColors.white),
+                color: backgroundColor ?? (dark ? HColors.primary : HColors.darkerGrey),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
-                child: Image(image: AssetImage(image), fit: BoxFit.cover, color: dark ? HColors.dark : HColors.dark),
+                child: Image(image: AssetImage(image), fit: BoxFit.cover, color: dark ? HColors.black : HColors.black),
               ),
             ),
             // Text
