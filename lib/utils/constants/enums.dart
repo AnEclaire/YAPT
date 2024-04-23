@@ -78,51 +78,51 @@ extension Evidence1 on Ghost {
       case Ghost.Spirit:
         return Ionicons.book;
       case Ghost.Wraith:
-        return Ionicons.flash;
+        return Ionicons.apps;
       case Ghost.Phantom:
         return Ionicons.hand_right;
       case Ghost.Poltergeist:
-        return Ionicons.hand_right;
-      case Ghost.Banshe:
-        return Ionicons.apps;
-      case Ghost.Jinn:
-        return Ionicons.flash;
-      case Ghost.Mare:
-        return Ionicons.videocam;
-      case Ghost.Revenant:
-        return Ionicons.videocam;
-      case Ghost.Shade:
-        return Ionicons.flash;
-      case Ghost.Demon:
-        return Ionicons.hand_right;
-      case Ghost.Yurei:
-        return Ionicons.apps;
-      case Ghost.Oni:
-        return Ionicons.flash;
-      case Ghost.Yokai:
-        return Ionicons.apps;
-      case Ghost.Hantu:
-        return Ionicons.hand_right;
-      case Ghost.Goryo:
-        return Ionicons.flash;
-      case Ghost.Myling:
-        return Ionicons.flash;
-      case Ghost.Onryo:
-        return Ionicons.videocam;
-      case Ghost.Twins:
-        return Ionicons.flash;
-      case Ghost.Raiju:
-        return Ionicons.flash;
-      case Ghost.Obake:
-        return Ionicons.flash;
-      case Ghost.Mimic:
-        return Ionicons.hand_right;
-      case Ghost.Moroi:
         return Ionicons.book;
+      case Ghost.Banshe:
+        return Ionicons.hand_right;
+      case Ghost.Jinn:
+        return Ionicons.hand_right;
+      case Ghost.Mare:
+        return Ionicons.book;
+      case Ghost.Revenant:
+        return Ionicons.book;
+      case Ghost.Shade:
+        return Ionicons.book;
+      case Ghost.Demon:
+        return Ionicons.book;
+      case Ghost.Yurei:
+        return Ionicons.videocam;
+      case Ghost.Oni:
+        return Ionicons.apps;
+      case Ghost.Yokai:
+        return Ionicons.videocam;
+      case Ghost.Hantu:
+        return Ionicons.videocam;
+      case Ghost.Goryo:
+        return Ionicons.apps;
+      case Ghost.Myling:
+        return Ionicons.hand_right;
+      case Ghost.Onryo:
+        return Ionicons.call;
+      case Ghost.Twins:
+        return Ionicons.call;
+      case Ghost.Raiju:
+        return Ionicons.apps;
+      case Ghost.Obake:
+        return Ionicons.hand_right;
+      case Ghost.Mimic:
+        return Ionicons.call;
+      case Ghost.Moroi:
+        return Ionicons.call;
       case Ghost.Deogen:
-        return Ionicons.apps;
+        return Ionicons.book;
       case Ghost.Thaye:
-        return Ionicons.apps;
+        return Ionicons.videocam;
       default:
         return Ionicons.close;
     }
@@ -133,51 +133,51 @@ extension Evidence1 on Ghost {
       case Ghost.Spirit:
         return Ionicons.call;
       case Ghost.Wraith:
-        return Ionicons.flash;
+        return Ionicons.call;
       case Ghost.Phantom:
         return Ionicons.call;
       case Ghost.Poltergeist:
-        return Ionicons.hand_right;
+        return Ionicons.call;
       case Ghost.Banshe:
-        return Ionicons.apps;
+        return Ionicons.videocam;
       case Ghost.Jinn:
-        return Ionicons.flash;
+        return Ionicons.snow;
       case Ghost.Mare:
-        return Ionicons.videocam;
+        return Ionicons.call;
       case Ghost.Revenant:
-        return Ionicons.videocam;
+        return Ionicons.snow;
       case Ghost.Shade:
-        return Ionicons.flash;
+        return Ionicons.snow;
       case Ghost.Demon:
-        return Ionicons.hand_right;
+        return Ionicons.snow;
       case Ghost.Yurei:
-        return Ionicons.apps;
+        return Ionicons.snow;
       case Ghost.Oni:
-        return Ionicons.flash;
+        return Ionicons.snow;
       case Ghost.Yokai:
-        return Ionicons.apps;
+        return Ionicons.call;
       case Ghost.Hantu:
-        return Ionicons.hand_right;
+        return Ionicons.snow;
       case Ghost.Goryo:
-        return Ionicons.flash;
-      case Ghost.Myling:
-        return Ionicons.flash;
-      case Ghost.Onryo:
-        return Ionicons.videocam;
-      case Ghost.Twins:
-        return Ionicons.flash;
-      case Ghost.Raiju:
-        return Ionicons.flash;
-      case Ghost.Obake:
-        return Ionicons.flash;
-      case Ghost.Mimic:
         return Ionicons.hand_right;
-      case Ghost.Moroi:
+      case Ghost.Myling:
         return Ionicons.book;
+      case Ghost.Onryo:
+        return Ionicons.snow;
+      case Ghost.Twins:
+        return Ionicons.snow;
+      case Ghost.Raiju:
+        return Ionicons.videocam;
+      case Ghost.Obake:
+        return Ionicons.videocam;
+      case Ghost.Mimic:
+        return Ionicons.snow;
+      case Ghost.Moroi:
+        return Ionicons.snow;
       case Ghost.Deogen:
-        return Ionicons.apps;
+        return Ionicons.call;
       case Ghost.Thaye:
-        return Ionicons.apps;
+        return Ionicons.book;
       default:
         return Ionicons.close;
     }

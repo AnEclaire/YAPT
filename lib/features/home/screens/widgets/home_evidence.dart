@@ -17,13 +17,13 @@ class HHomeEvidence extends StatelessWidget {
         alignment: WrapAlignment.center,
         crossAxisAlignment: WrapCrossAlignment.center,
         children: <Widget>[
-          HVerticalImageText(image: HImages.emfImage, title: 'E.M.F. 5', onTap: (){},),
-          HVerticalImageText(image: HImages.dotsImage, title: 'Dots', onTap: (){},),
-          HVerticalImageText(image: HImages.uvImage, title: 'UV', onTap: (){},),
-          HVerticalImageText(image: HImages.ghostOrbsImage, title: 'Orbs', onTap: (){},),
-          HVerticalImageText(image: HImages.ghostWritingImage, title: 'Writing', onTap: (){},),
-          HVerticalImageText(image: HImages.spiritBoxImage, title: 'Spirit Box', onTap: (){},),
-          HVerticalImageText(image: HImages.freezingImage2, title: 'Freezing', onTap: (){},),
+          HVerticalImageText(image: HImages.emfImage, title: 'E.M.F. 5'),
+          HVerticalImageText(image: HImages.dotsImage, title: 'Dots'),
+          HVerticalImageText(image: HImages.uvImage, title: 'UV'),
+          HVerticalImageText(image: HImages.ghostOrbsImage, title: 'Orbs'),
+          HVerticalImageText(image: HImages.ghostWritingImage, title: 'Writing',),
+          HVerticalImageText(image: HImages.spiritBoxImage, title: 'Spirit Box'),
+          HVerticalImageText(image: HImages.freezingImage2, title: 'Freezing'),
         ],
       )
     );

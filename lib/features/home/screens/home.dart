@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:yapt/utils/constants/enums.dart';
 import 'package:yapt/utils/constants/sizes.dart';
 import 'package:yapt/utils/constants/text_strings.dart';
@@ -9,12 +10,14 @@ import 'package:yapt/features/home/screens/widgets/home_evidence.dart';
 import 'package:yapt/common/widgets/ghosts/ghost_cards/ghost_card_vertical.dart';
 import 'package:yapt/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:yapt/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:yapt/utils/provider_model/ghost_tracker_model.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final ghostTrackerModel = Provider.of<GhostTrackerModel>(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(children: [
@@ -53,7 +56,9 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 // Ghosts
-                HGridLayout(itemCount: 24, itemBuilder: (_, index) => const HGhostCardVertical(ghost: Ghost.Phantom)),
+                HGridLayout(itemCount: ghostTrackerModel.size,
+                    itemBuilder: (_, index) => HGhostCardVertical(ghost: ghostTrackerModel.ghosts.elementAt(index))
+                ),
                 // May need a widget that can return an HGridLayout that changes itemCount and itemBuilder per evidence.
               ],
             ),
