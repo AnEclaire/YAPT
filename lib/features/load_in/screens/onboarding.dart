@@ -20,7 +20,7 @@ class OnBoardingScreen extends StatelessWidget {
               OnBoardingPage(image: HImages.onBoardingImage1,
                   title: HTexts.onBoardingTitle1,
                   subTitle: HTexts.onBoardingSubTitle1,
-                  subTitle2: HTexts.onBoardingSubTitle2
+                  //subTitle2: HTexts.onBoardingSubTitle2
               )
             ],
           ),

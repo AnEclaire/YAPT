@@ -1,17 +1,15 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:yapt/utils/constants/enums.dart';
 
 class GhostTrackerModel extends ChangeNotifier {
+  final ghostEvidence _uv = ghostEvidence("uv", false);
   final ghostEvidence _emf = ghostEvidence("emf", false);
   final ghostEvidence _dots = ghostEvidence("dots", false);
-  final ghostEvidence _uv = ghostEvidence("uv", false);
   final ghostEvidence _orbs = ghostEvidence("orbs", false);
   final ghostEvidence _writing = ghostEvidence("writing", false);
-  final ghostEvidence _spiritbox = ghostEvidence("spiritbox", false);
   final ghostEvidence _freezing = ghostEvidence("freezing", false);
+  final ghostEvidence _spiritbox = ghostEvidence("spiritbox", false);
 
   int amountOfEvidence = 0;
 

@@ -4,10 +4,10 @@ import 'package:yapt/utils/helpers/helper_functions.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
-    super.key, required this.image, required this.title, required this.subTitle, required this.subTitle2,
+    super.key, required this.image, required this.title, required this.subTitle, //required this.subTitle2,
   });
 
-  final String image, title, subTitle, subTitle2;
+  final String image, title, subTitle; //, subTitle2;
 
   @override
   Widget build(BuildContext context) {
@@ -34,11 +34,11 @@ class OnBoardingPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: HSizes.spaceBtwItems),
-          Text(
+          /**Text(
             subTitle2,
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
-          )
+          )*/
         ],
       ),
     );

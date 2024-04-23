@@ -14,14 +14,14 @@ class HPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return HCurvedEdgesWidget(
       child: SizedBox(
-        height: 400,
+        height: 330,
         child: Container(
           color: HColors.primary,
           child: Stack( // size.isFinite is not true
             children: [
               // Background Custom Shapes
-              Positioned(top: -150, right: -250, child: HCircularContainer(backgroundColor: HColors.textWhite.withOpacity(0.1))),
-              Positioned(top: 100, right: -300, child: HCircularContainer(backgroundColor: HColors.textWhite.withOpacity(0.1))),
+              Positioned(top: 125, right: 100, child: HCircularContainer(backgroundColor: HColors.textWhite.withOpacity(0.1))),
+              Positioned(top: 125, right: -50, child: HCircularContainer(backgroundColor: HColors.textWhite.withOpacity(0.1))),
               child,
             ],
           ),

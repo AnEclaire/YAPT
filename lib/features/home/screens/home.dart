@@ -25,10 +25,10 @@ class HomeScreen extends StatelessWidget {
               children: [
                 // Appbar
                 HHomeAppBar(),
-                SizedBox(height: HSizes.xs),
+                //SizedBox(height: HSizes.xs),
                 //Searchbar
-                HSearchContainer(text: 'Search ghosts...'),
-                SizedBox(height: HSizes.spaceBtwItems),
+               // HSearchContainer(text: 'Search ghosts...'),
+                SizedBox(height: HSizes.xs),
                 // Evidence Scrollable Section
                 Padding(
                   padding: EdgeInsets.only(left: HSizes.defaultSpace),

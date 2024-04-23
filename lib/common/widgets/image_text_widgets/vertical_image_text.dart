@@ -44,9 +44,6 @@ class _HVerticalImageTextState extends State<HVerticalImageText> {
             widget.backgroundColor = Colors.white;
             updateList(ghostTrackerModel);
           }
-          if(!getStateForColor(ghostTrackerModel) && ghostTrackerModel.amountOfEvidence == 0) {
-            widget.backgroundColor = Colors.white;
-          }
         });
       },
       child: Padding(
@@ -105,9 +102,10 @@ class _HVerticalImageTextState extends State<HVerticalImageText> {
         temp = ghostTrackerModel.orbs;
         break;
       default:
+        temp = true;
         break;
     }
-    return false;
+    return temp;
   }
 
   void updateList(GhostTrackerModel ghostTrackerModel) {
