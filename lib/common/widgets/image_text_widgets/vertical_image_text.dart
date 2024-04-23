@@ -44,6 +44,9 @@ class _HVerticalImageTextState extends State<HVerticalImageText> {
             widget.backgroundColor = Colors.white;
             updateList(ghostTrackerModel);
           }
+          if(!getStateForColor(ghostTrackerModel) && ghostTrackerModel.amountOfEvidence == 0) {
+            widget.backgroundColor = Colors.white;
+          }
         });
       },
       child: Padding(
@@ -75,6 +78,36 @@ class _HVerticalImageTextState extends State<HVerticalImageText> {
         ),
       ),
     );
+  }
+
+  bool getStateForColor(GhostTrackerModel ghostTrackerModel) {
+    bool temp;
+    switch(widget.title) {
+      case "Writing":
+        temp = ghostTrackerModel.writing;
+        break;
+      case "Spirit Box":
+        temp = ghostTrackerModel.spiritbox;
+        break;
+      case "Dots":
+        temp = ghostTrackerModel.dots;
+        break;
+      case "E.M.F. 5":
+        temp = ghostTrackerModel.emf;
+        break;
+      case "Freezing":
+        temp = ghostTrackerModel.freezing;
+        break;
+      case "UV":
+        temp = ghostTrackerModel.uv;
+        break;
+      case "Orbs":
+        temp = ghostTrackerModel.orbs;
+        break;
+      default:
+        break;
+    }
+    return false;
   }
 
   void updateList(GhostTrackerModel ghostTrackerModel) {

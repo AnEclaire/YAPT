@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:yapt/utils/constants/enums.dart';
 import 'package:yapt/utils/constants/sizes.dart';
 import 'package:yapt/utils/constants/text_strings.dart';
 import 'package:yapt/common/widgets/layouts/grid_layout.dart';
